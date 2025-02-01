@@ -1,6 +1,5 @@
+// next.config.js
 module.exports = {
-    output: "standalone", // Genera archivos de despliegue optimizados
-    experimental: {
-      outputFileTracingRoot: path.join(__dirname, "../../"), // Ajusta según tu estructura
-    },
-  };
+  output: "standalone", // Genera archivos optimizados para Vercel
+  trailingSlash: true, // Mejor manejo de rutas
+};
